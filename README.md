@@ -1,1 +1,1 @@
-This project is used to practise frame structure!!
+This project is used to practice frame structure!!
