@@ -1,0 +1,535 @@
+.list-filter-form {
+  border: 1px solid #f2f2f2;
+  margin-bottom: 15px;
+  padding: 15px 15px 0 15px ;
+  .form-group{
+    width:33.33%;
+    padding-right: 15px;
+    height: 30px;
+    float: left;
+    .control-label{
+      width: 90px;
+      padding-top: 5px;
+      text-align: left;
+      float: left;
+    }
+    .controls{
+      margin-left: 90px;
+    }
+  }
+
+}
+.list-no-border{
+  border:0px;
+}
+@media (min-width:1288px){
+  .list-filter-form {
+    .form-group{
+      width:25%;
+      padding-right: 15px;
+      float: left;
+    }
+  }
+
+}
+.order-list{
+  border: 1px solid #e9e9e9;
+  .star-container{
+    .star-rate{
+      outline: none;
+    }
+    .fa-eraser{color: #808080;}
+    .fa-star{
+      color: #f60;
+
+    }
+    .fa-star-o{
+      color: #f60;
+    }
+  }
+  >tbody>tr>td {
+    vertical-align: middle;
+    border: 1px solid #e9e9e9;
+  }
+  >tbody+tbody{
+    border-top: 0;
+  }
+  .header-row{
+    background-color:#f9f9f9;
+  }
+  .remark-row{
+    height: 25px;
+    line-height: 25px;
+    background: #fffaeb;
+    color: #f60;
+    td{
+      padding: 0 10px;
+      word-break: break-all;
+    }
+  }
+  .goods-row{
+    +.goods-row{
+      margin-top: 10px;
+    }
+    width: 100%;
+    display: table;
+    overflow: hidden;
+    >.image-cell{
+      width: 70px;
+      float: left;
+      display: table-cell;
+      >img{
+        width: 60px;
+        height: 60px;
+        vertical-align: middle;
+        border: 1px solid #F4F2F2;
+        padding: 1px;
+        background-color: #fff;
+      }
+    }
+    >.price-cell{
+      display: table-cell;
+    }
+    >.title-cell{
+      .goods-sku{
+        color: #666;
+      }
+    }
+  }
+}
+
+.order-timeline {
+  border: 1px solid #f2f2f2;
+  margin-bottom: 15px;
+  padding: 10px 0 6px 0;
+}
+
+.order-region {
+  border: 1px solid #f2f2f2;
+  margin-bottom: 15px;
+  .order-system {
+    float: left;
+    width: 40%;
+    border-right: 1px solid #f2f2f2;
+    padding: 10px;
+    .order-status {
+      .status-title {
+        font-size: 14px;
+        margin: 0 0 8px 0;
+        &.success {//成功
+          color: #4cae4c;
+        }
+        &.orderclose{//关闭
+          color: #333;
+          i{
+            color: #ED5050;
+          }
+        }
+      }
+      .status-intro {
+        color: #666;
+        padding-left: 16px;
+      }
+    }
+    .order-info {
+      h3 {
+        font-size: 14px;
+        margin: 0 0 10px 0;
+      }
+      table {
+        margin-left: 16px;
+        th {
+          text-align: right;
+          font-weight: normal;
+          color: #666;
+        }
+        th,
+        td {
+          padding-bottom: 8px;
+        }
+      }
+    }
+  }
+  .order-member {
+    padding-left: 40%;
+    .member-border {
+      border-left: 1px solid #f2f2f2;
+      margin-left: -1px;
+      padding: 10px;
+    }
+    .order-delivery {
+      h3 {
+        font-size: 14px;
+        margin: 0 0 10px 0;
+      }
+      table {
+        margin-left: 16px;
+        th {
+          text-align: right;
+          font-weight: normal;
+          color: #666;
+        }
+        th,
+        td {
+          padding-bottom: 8px;
+        }
+      }
+    }
+  }
+
+  .order-action {
+    padding: 20px 0 0 16px;
+  }
+
+}
+
+.order-goods {
+  border: 1px solid #e9e9e9;
+  .package-table{
+    margin-bottom: 0;
+    >tbody{
+      border:0;
+    }
+    >tbody>tr>td {
+      vertical-align: middle;
+      border: 1px solid #e9e9e9;
+      border-top:0;
+      border-left: 0;
+    }
+    tbody:last-child>tr>td{
+      border-bottom: 0;
+    }
+    .customer{
+      border: 0;
+    }
+    >tbody>tr>td.message-row{
+      border-top: 1px solid #e9e9e9;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 1px solid #e9e9e9;
+    }
+    >tbody:last-child>tr>td.message-row{
+      border-bottom:0;
+    }
+    .goods-sku{
+      color:#666;
+    }
+    .package-result{
+      border: 1px solid $border-color;
+      vertical-align: middle;
+      text-align: center;
+    }
+  }
+  .selffetch-table{
+    margin-bottom: 0;
+  }
+  >tbody{
+    border:0;
+  }
+  >tbody>tr>td {
+    vertical-align: middle;
+    border: 1px solid #e9e9e9;
+  }
+  .goods-image {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    vertical-align: middle;
+    border: 1px solid #F4F2F2;
+    padding: 1px;
+    background-color: #fff;
+    float: left;
+  }
+  >tfoot .get-money {
+    vertical-align: middle;
+    background: #f9f9f9;
+    padding: 10px 15px;
+    span {
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+}
+
+.feedback-region {
+  border: 1px solid #f2f2f2;
+  margin-bottom: 15px;
+  .dashed-line {
+    border-bottom: 1px dashed #e5e5e5;
+  }
+  table {
+    margin-top: 10px;
+    th {
+      text-align: right;
+      font-weight: normal;
+      color: #666;
+    }
+    th,
+    td {
+      padding-bottom: 8px;
+    }
+  }
+  .feedback-info {
+    float: left;
+    width: 40%;
+    border-right: 1px solid #f2f2f2;
+    padding: 10px;
+    h3 {
+      font-size: 14px;
+      margin: 0 0 10px 0;
+    }
+    .feedback-goods {
+      width: 100%;
+      display: table;
+      overflow: hidden;
+      padding: 10px 0;
+      .image-cell {
+        width: 70px;
+        float: left;
+        display: table-cell;
+        img {
+          width: 60px;
+          height: 60px;
+          vertical-align: middle;
+          border: 1px solid #F4F2F2;
+          padding: 1px;
+          background-color: #fff;
+        }
+      }
+      .title-cell {}
+      .price-cell {
+        display: table-cell;
+        text-align: right;
+      }
+    }
+  }
+  .feedback-option {
+    padding-left: 40%;
+    .option-border {
+      border-left: 1px solid #f2f2f2;
+      margin-left: -1px;
+      padding: 10px;
+      .feedback-status {
+        margin-bottom: 20px;
+        .status-title {
+          font-size: 14px;
+          margin: 0 0 8px 0;
+          &.success {
+            color: #4cae4c;
+          }
+        }
+        .status-intro {
+          color: #666;
+          padding-left: 16px;
+        }
+        .feedback-action {
+          margin-top: 15px;
+          padding-left: 16px;
+        }
+      }
+      .feecback-log {
+        margin-top: 30px;
+        h3 {
+          font-size: 14px;
+          margin: 0 0 8px 0;
+        }
+        table {
+          width: 100%;
+          th {
+            width: 100px;
+            text-align: left;
+          }
+          .tr-title {
+            border-bottom: 1px dashed #e5e5e5;
+            th {
+              padding: 20px 0 10px 0;
+              font-weight: bold;
+              color: #333;
+            }
+            td {
+              padding: 20px 0 10px 0;
+            }
+            &+tr td {
+              padding-top: 10px;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+/* 物流 */
+.order-wuliu {
+  position:relative;
+  background:#fff
+}
+.order-wuliu:after {
+  border-color:#ccc
+}
+.order-wuliu .list {
+  padding:5px 25px 15px 38px
+}
+.order-wuliu .list li {
+  position:relative;
+  padding:10px 0;
+  color:#999
+}
+.order-wuliu .list li:after {
+  content:'\20';
+  display:block;
+  width:1px;
+  height:95%;
+  background:#3985ff;
+  position:absolute;
+  left:-20px;
+  top:20px
+}
+.order-wuliu .list li:first-child {
+  color:#333
+}
+.order-wuliu .list li:first-child i {
+  border-color:#fb8a00
+}
+.order-wuliu .list li:first-child i:after {
+  background-color:#fb8a00
+}
+.order-wuliu .list li:last-child:after {
+  height:0
+}
+.order-wuliu .list i {
+  z-index:1;
+  position:absolute;
+  left:-24px;
+  top:13px;
+  display:block;
+  width:10px;
+  height:10px;
+  background:#fff;
+  -webkit-border-radius:8px;
+  border-radius:8px;
+  border:1px solid #3985ff
+}
+.order-wuliu .list i:after {
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin:-3px 0 0 -3px;
+  content:'\20';
+  display:block;
+  width:6px;
+  height:6px;
+  background:#3985ff;
+  -webkit-border-radius:6px;
+  border-radius:6px
+}
+.order-wuliu .list p{
+  margin: 0;
+  font-size: 12px;
+}
+.order-wuliu .list p em {
+  color:#3985ff
+}
+.order-wuliu .list small {
+  font-size:10px;
+  color:#999
+}
+/* 优惠详情 */
+.order-favourable{
+  display: inline-block;
+  position: relative;
+  a{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 7px;
+    border: 1px solid #07d;
+    line-height: 18px;
+    border-radius: 20px;
+    color: #07d;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  &:hover .order-favourable-box{
+    display: block;
+  }
+  .order-favourable-box{
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    width: 300px;
+    display: none;
+    background: #fff;
+    table{
+      width: 100%;
+      border: 1px solid #f2f2f2;
+      -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+      th,td {
+        font-weight: normal;
+        padding: 10px;
+        border-bottom: 1px solid #e5e5e5;
+        vertical-align: top;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      th{
+        color: #999;
+        background: #fafafa;
+        text-align: center;
+        border: 1px solid #f2f2f2;
+      }
+      td{
+        border-bottom: none 0;
+        border-top: 1px solid #e5e5e5;
+        text-align: center;
+        border: 1px solid #f2f2f2;
+      }
+    }
+  }
+  .order-favourable-box::before,.order-favourable-box::after{
+    position: absolute;
+    bottom: -15px;
+    right: 10px;
+    display: block;
+    content: ' ';
+    width: 0;
+    height: 0;
+    border: 8px solid #e5e5e5;
+    border-color: #e5e5e5 transparent transparent transparent;
+    z-index: 1;
+  }
+  .order-favourable-box::after{
+    bottom: -14px;
+    border-color: #fff transparent transparent transparent;
+  }
+}
+
+/*发货弹框表格*/
+.table-delivery{
+  >tbody>tr{
+    td.delrow{
+      border-bottom: 1px solid #e9e9e9;
+      border-right: 1px solid #e9e9e9;
+    }
+    td.delrowlast{
+      border-bottom: 1px solid #e9e9e9;
+    }
+    td.setrow{
+      border:0;
+    }
+  }
+}
+.peerpay-info{
+  border: 1px solid $border-color;
+  border-bottom: 0;
+  margin-bottom: 0;
+  .widget-head{
+    margin-bottom: 0;
+    border-bottom: 0;
+  }
+}

@@ -1,0 +1,21 @@
+.mod-tel {
+  position: relative;
+  padding: .85rem;
+  line-height: 2.4rem;
+  font-size: 1.6rem;
+  background-color: $white;
+  a {
+    color: $gray-light;
+    i{
+      font-size: 2.4rem;
+      color: $gray-999;
+      &.if-tel {
+        margin-right: .5rem;
+      }
+      &.fa-chevron-right {
+        line-height: 2.4rem;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

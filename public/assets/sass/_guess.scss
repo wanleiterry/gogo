@@ -1,0 +1,77 @@
+.guess-form {
+    .guess-table td.tp-clear-padding{
+        padding:0;
+    }
+    .guess-table .checkbox input[type=checkbox]:checked:after{
+        border-left: 0px solid #fff;
+        border-bottom: 0px solid #fff;
+    }
+    .guess-table .checkbox input[type=checkbox]:before{
+        border: 0px solid #fff;
+        color: #4b0;
+    }
+    .checkbox .detail-input input[type=checkbox]:disabled:before {
+        border: none;
+        content: "\f057";
+        font-family: FontAwesome;
+        font-size: 2.6rem;
+        color: #fff;
+        visibility: hidden;
+        box-shadow:none !important;
+        background:none !important;
+
+    }
+    .guess-table .checkbox label, .radio label{
+        padding:8px;
+        padding-bottom: 20px;
+        display: block;
+        text-align: center;
+        position: relative;
+        box-shadow:none !important;
+        background:none !important;
+
+    }
+    .guess-table .checkbox input[type=checkbox], .radio input[type=radio]{
+        margin:0;
+        padding:0;
+        display: inline-block;
+        vertical-align: baseline;
+        box-shadow:none !important;
+        background:none !important;
+    }
+    .remind-text{
+        
+    }
+    .remind-text:before{
+        border: none;
+        content: "\f057";
+        font-family: FontAwesome;
+        font-size: 2.6rem;
+        color: #eee;
+        position: absolute;
+        left: 26%;
+        display: inline-block;
+        top: 13px;
+        background: #fff;
+        width: 36px;
+        height: 36px;
+    }
+    .guess-iput{
+        float:left;
+        margin-left:20px;
+    }
+    .guess-iput-span{
+        float:left;
+        color:#999;
+        margin-left:12px;
+    }
+    .guess-lable{
+        padding: 8px 8px 20px;
+        padding-top: 20px;
+    }
+    pre {
+        color: red;
+        margin-bottom: 30px;
+        background-color: #ffffe0;
+    }
+}

@@ -1,0 +1,166 @@
+.magic-mod{
+	.browse-chart,.period-chart,.trend-chart{
+		height: 300px;
+	}
+	.magic-header{
+	    overflow: hidden;
+
+	    form{
+	    	position: absolute;
+		    right: 490px;
+		    top: 0;
+
+		    .btn-search{
+				margin-left: 10px;
+		    }
+	    }
+
+	    .form-group{
+
+	    	.control-label{
+	    		width: 45px;
+			    padding-top: 5px;
+			    text-align: left;
+			    float: left;
+	    	}
+
+	    	input{
+	    		min-width: 142px;
+	    	}
+	    }
+	}
+	.magic-body{
+		.map-area{
+			.map-china,.map-data{
+			    height: 300px;
+			    width: 50%;
+			    float: left;
+			    position: relative;
+			}
+			.map-data{
+				table{
+					width: 100%;
+
+					tr{
+						height: 40px;
+					}
+
+					thead tr{
+						font-size: 18px;
+					}
+
+					thead th,tbody tr td{
+						width: 33%;
+						text-align: center;
+					}
+				}
+				.no-data{
+				    position: absolute;
+				    top: 100px;
+				    width: 100%;
+				    font-size: 16px;
+				    text-align: center;
+				}
+				.progress{
+					margin-bottom: 0;
+				}
+			}
+		}
+		.trade-view{
+		    overflow: hidden;
+		    position: relative;
+
+			.trade-view-data{
+			    float: left;
+			    width: 70%;
+			    height: 206px;
+
+				.visit-tr,.order-tr,.pay-tr{
+					height: 68px;
+					border-bottom: 1px solid #eee;
+					background: #effbfb;
+				    padding: 20px 0 0 70px;
+
+				    span{
+				    	display: block;
+					    float: left;
+					    margin-left: 120px;
+
+					    &:first-child {
+					    	margin-left: 0;
+					    }
+				    }
+				}
+				.visit-tr{
+					span{
+						color: #5faead;
+					}
+				}
+				.order-tr{
+					background: #f7fff1;
+					span{
+						color: #7f9c67;
+					}
+				}
+				.pay-tr{
+					background: #fffbf4;
+					border-bottom: 0;
+					span{
+						color: #bc853f;
+					}
+				}
+			}
+			.trade-view-line{
+			    float: left;
+		        width: 30%;
+			    min-width: 433px;
+			    height: 206px;
+			    right: 2%;
+			    background: url(/image/statistic/tp.png) no-repeat;
+			    position: absolute;
+
+			    ul{
+			    	height: 206px;
+			    	li{
+					    height: 68px;
+					    line-height: 68px;
+					    font-size: 18px;
+					    color: #fff;
+					    margin-left: 120px;
+			    	}
+			    	.order-li{
+			    		line-height: 76px;
+			    	}
+			    	.pay-li{
+			    		line-height: 74px;
+			    	}
+			    }
+
+			    .order-trans-rate{
+			        position: absolute;
+				    top: 22%;
+				    right: 20%;
+				    span{
+				    	color: #7e9c66;
+				    }
+			    }
+			    .order-pay-rate{
+				    position: absolute;
+			       	bottom: 31%;
+    				right: 23%;
+    				span{
+				    	color: #bc853f;
+				    }
+			    }
+			    .pay-trans-rate{
+				    position: absolute;
+			        right: 5%;
+    				bottom: 6%;
+    				span{
+				    	color: #5eadac;
+				    }
+			    }
+			}
+		}
+	}
+}

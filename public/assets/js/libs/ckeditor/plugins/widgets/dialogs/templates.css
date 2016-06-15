@@ -1,0 +1,23 @@
+.cke_dialog_ui_html{
+    padding-right: 10px;
+    display: block;
+    max-height: 400px;
+}
+.cke_widget_item{
+    width: 320px;
+    position: relative;
+    background: #FFF;
+    border: 1px solid #fff;
+    border-bottom: 1px dotted #ddd;
+    padding: 5px 15px 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.cke_widget_item:hover{
+    border: 1px dotted #f60;
+}
+.cke_widget_item p,.cke_widget_item section span{
+    white-space: normal;
+    margin-bottom: 0;
+}

@@ -1,0 +1,526 @@
+.view-refund,.view-refund-wait{
+  .refund-header-bar{
+    background-color: #ffffff;
+    text-align: center;
+    margin-bottom: 1rem;
+    @include background-borders(bottom, $gray-lighter);
+    .sp-round{
+      padding-top: .5rem;
+      background-color: #ffffff;
+    }
+    .sp{
+      width:16%;
+      display: inline-block;
+      text-align: center;
+      position: relative;
+    }
+    .sp-round span{
+      display: inline-block;
+      width: 23px;
+      height: 23px;
+      border-radius: 100%;
+      background-color: #cccccc;
+      position: relative;
+    }
+
+    .sp-visited span{
+      background-color: #26cc0b;
+    }
+
+    .sp-line span{
+      width: 100%;
+      height: .2rem;
+      display: inline-block;
+      border-radius: 100%;
+      background-color: #cccccc;
+      border-radius: 0;
+      position: absolute;
+      left: 0;
+      bottom: 0.8rem;
+    }
+
+    .sp-txt{
+      padding-bottom: .5rem;
+      background-color: #ffffff;
+      span{
+        width:32.3%;
+        display: inline-block;
+        text-align: center;
+        color: #cccccc;
+      }
+      .txt-visited{
+        color: #26cc0b;
+      }
+    }
+  }
+
+
+  h4{
+    color: #cccccc;
+    //    @include background-borders(bottom, $gray-lighter);
+    margin: .85rem 0;
+    padding: .5rem 0;
+    font-weight: normal;
+  }
+  .all-btn{
+    text-align: center;
+    background-color: #fff;
+    padding: 1rem;
+    bottom: 0;
+    //    position: absolute;
+    width: 100%;
+  }
+  .sel{
+    position: absolute;
+    top: 1.3rem;
+    right: 1.3rem;
+    //    font-size: 2.2rem;
+    //    line-height: 1;
+    color: #999999;
+  }
+
+  .p-warning{
+    margin: .85rem .85rem 0;
+    line-height: 1.85rem;
+    //    font-size: .85rem;
+    text-align: justify;
+    label{
+      margin: 0;
+      color: #fb8a00;
+    }
+  }
+
+  .sp-time{
+    margin: .85rem;
+    text-align: right;
+    color: #69C;
+    font-weight: normal;
+    //    font-size: 1.2rem ;
+  }
+
+  //申请退款的商品
+  .refund-goods{
+    padding:0 .85rem;
+    background-color: #ffffff;
+    div{
+      height: 4.3rem;
+      @include background-borders(bottom, $gray-lighter);
+      line-height: 4.3rem;
+    }
+    div:nth-child(2){
+      color: #fb8a00;
+    }
+    label{
+      color: #333;
+      margin: 0;
+    }
+    span{
+      text-align: right;
+      float: right;
+      display: inline-block;
+    }
+    div:first-child{
+      span{
+        text-align: right;
+        float: right;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #999;
+        max-width: 13rem;
+      }
+    }
+  }
+
+  // 申请退款
+  .refund-apply{
+    padding-bottom: 2rem;
+    .refund-sel{
+      position: relative;
+      //      @include background-borders(bottom, $gray-lighter);
+      form{
+        background-color: #fff;
+        padding-bottom: .85rem;
+        .remember-info{
+          padding: .85rem 0;
+          color: #6F6F6F;
+          border: none;
+          background: none;
+          label{
+            position: relative;
+            line-height: 2rem;
+            height: 2rem;
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .refund-txt{
+      textarea{
+        border:.1rem solid #F1F1F1;
+        resize: none;
+        height: 6rem;
+      }
+    }
+    .refund-bot{
+      background-color: #ffffff;
+      margin-top: .85rem;
+    }
+    .form-action{
+      padding: .85rem;
+    }
+    .frm-add{
+      line-height: 3.24rem;
+      em{
+        font-style: normal;
+        color:#fb8a00;
+      }
+    }
+    .refund-p{
+      p{
+        color: #cccccc;
+        margin: 0;
+      }
+    }
+  }
+
+  //  拒绝申请
+  .refund-refuse{
+    .refund-header-bar{
+      .sp-line:nth-child(2) span{
+        background-color: #26cc0b;
+      }
+      .sp-line:nth-child(4) span{
+        background-color: #E06F6F;
+      }
+      .sp-round:nth-child(3) span{
+        background-color: #E06F6F;
+      }
+      .sp-round:nth-child(5) span{
+        background-color: #ffffff;
+        border: .1rem solid #E06F6F;
+        font-weight: 800;
+        i{
+          position: absolute;
+          top: .1rem;
+          left: .4rem;
+          color: #E06F6F;
+        }
+      }
+    }
+    .refuse-result{
+      .all-txt{
+        border-radius: 5px;
+        color: #ffffff;
+        padding: .85rem;
+        margin: .85rem .85rem 0 .85rem;
+        position: relative;
+        .warning-txt{
+          margin-left: 4.58rem;
+          //          font-size: 1.3rem;
+        }
+      }
+      .refuse-txt{
+        background-color: #E06F6F;
+      }
+      .all-txt:nth-child(3){
+        background-color: #ffffff;
+        color: #ADADAD;
+      }
+      .warning{
+        font-size: 4rem;
+        position: absolute;
+        bottom: 0;
+      }
+
+      .refuse-btn button{
+        color: #999999;
+      }
+      button:nth-child(1){
+        margin-right: 1rem;
+      }
+      button:nth-child(2){
+        color: #E06F6F;
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  //  同意申请
+  .refund-agree{
+    .refund-header-bar{
+      .sp-line:nth-child(2) span{
+        background-color: #26cc0b;
+      }
+      .sp-round:nth-child(3) span{
+        background-color: #26cc0b;
+      }
+      .sp-line:nth-child(4) span{
+        background-color: #cccccc;
+      }
+      .sp-round:nth-child(5) span{
+        background-color: #cccccc;
+        border: none;
+      }
+    }
+    .agree-result{
+      //      background-color: #ffffff;
+      padding-top: .1rem;
+      padding-bottom: 1.1rem;
+      color: #6F6F6F;
+      .deliver-detail{
+        background-color: #ffffff;
+        .agree-detail{
+          h4{
+            @include background-borders(bottom, $gray-lighter);
+            margin: .85rem 0;
+            padding: 1.3rem 0;
+
+          }
+        }
+      }
+      .refund-explain{
+        padding: .85rem;
+        background-color: #FFFFFF;
+        div{
+          line-height: 2.5rem;
+        }
+        label{
+          margin: 0;
+        }
+      }
+    }
+    .agree-txt{
+      background-color: #6699cc;
+    }
+    .agree-btn{
+      position: relative;
+    }
+    .agree-btn button{
+      margin-right: 0;
+      color: #ffffff;
+      background-color: #ff6600;
+    }
+    .agree-consignee{
+      @include background-borders(bottom, $gray-lighter);
+      margin: .85rem 0;
+      padding: .58rem 0 1.2rem 0;
+      span{
+        float: right;
+      }
+      label{
+        margin: 0;
+      }
+    }
+  }
+
+  //  查看退款申请
+  .refund-list{
+    @include background-borders(top, $gray-lighter);
+    margin: .85rem 0;
+    .refund-check{
+      margin: .85rem 0 0 0;
+      padding: .85rem;
+      background-color: #ffffff;
+      @include background-borders(bottom, $gray-lighter);
+      div{
+        margin: 0;
+        line-height: 2.5rem;
+        //        display: -webkit-box;
+        color: #6F6F6F;
+        span{
+          word-break: break-all;
+          display: inline-block;
+          //          float: right;
+        }
+        label{
+          color: #cccccc;
+          font-weight: normal;
+          margin: 0 .85rem 0 0;
+        }
+        em{
+          font-style: normal;
+          color:#fb8a00;
+          //          float: right;
+        }
+      }
+    }
+
+    .refund-record{
+      text-align: center;
+      padding: .85rem 0;
+      @include background-borders(bottom, $gray-lighter);
+      a{
+        color: #6699CC;
+      }
+    }
+  }
+
+
+  //  退款成功
+  .refund-success{
+    .refund-header-bar{
+      .sp-line:nth-child(2) span{
+        background-color: #26cc0b;
+      }
+      .sp-line:nth-child(4) span{
+        background-color: #26cc0b;
+      }
+      .sp-round:nth-child(3) span{
+        background-color: #26cc0b;
+      }
+      .sp-round:nth-child(5) span{
+        background-color: #ffffff;
+        border: none;
+        color: #26CC0B;
+        font-weight: normal;
+      }
+    }
+    .success-result{
+      .success-txt{
+        background-color: #26cc0b;
+      }
+    }
+  }
+
+
+  .consult-goods{
+    div{
+      height: auto;
+      line-height: 2.5rem;
+      font-size: 1rem;
+      p{
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .consult-goods-list{
+      position: relative;
+      padding: .5rem 0;
+      label{
+        font-weight: normal;
+      }
+      .attribute-text{
+        position: absolute;
+        display: inline-block;
+        line-height: 1.5rem;
+        padding: .5rem 0 0 0;
+        text-align: left;
+        .attribute{
+          color: #999;
+        }
+        p{
+          text-align: left;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          color: #333333;
+          max-width: 13rem;
+        }
+        .lb-status{
+          color: #f20000;
+        }
+      }
+      img{
+        width: 5rem;
+        height: 5rem;
+        padding: .5rem;
+      }
+      .fr{
+        float: right;
+      }
+      .lb-num{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .consult-record{
+    text-align: center;
+    margin: 2.5rem 1.3rem;
+    color: #ff8000;
+    .consult-time{
+      background-color: #EBEBEB;
+      border-radius: 5px;
+      padding: .2rem 1.85rem;
+      text-align: center;
+      color: #999999;
+    }
+    .consult-dialog{
+      margin: 0.5rem 0;
+      padding: .85rem;
+      text-align: left;
+      background-color: #EBEBEB;
+      color: #666666;
+      position: relative;
+      border-radius: 2px;
+      div{
+        background-color: #EBEBEB;
+        line-height: 1.5rem;
+        p:first-child{
+          margin-bottom: .5rem;
+          margin-top: .5rem;
+        }
+        p{
+          margin: 0;
+          padding: 0;
+          font-size: 1rem;
+        }
+      }
+      div:first-child{
+        //        @include background-borders(bottom, $gray-lighter);
+        background-color: #EBEBEB ;
+        border-bottom: 1px solid #dddddd;
+        line-height: 2.5rem;
+      }
+      .arrow-right{
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid #EBEBEB;
+        position: absolute;
+        right: -10px;
+        top: 10px;
+      }
+    }
+  }
+  .consult-record-left{
+    //    background-color: #23527c;
+    .consult-dialog{
+      background-color: #8e9cb6;
+      div{
+        background-color: #8e9cb6;
+        color: #FFFFFF;
+        p:first-child{
+          margin-bottom: .5rem;
+          margin-top: .5rem;
+        }
+        p{
+          margin: 0;
+          padding: 0;
+          font-size: 1rem;
+        }
+      }
+      div:first-child{
+        line-height: 2.5rem;
+        //        @include background-borders(bottom, $gray-lighter);
+        background-color: #8e9cb6;
+        border-bottom: 1px solid #a1afc9;
+      }
+      .arrow-left{
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid #8e9cb6;
+        position: absolute;
+        left: -9px;
+        top: 10px;
+      }
+    }
+  }
+}

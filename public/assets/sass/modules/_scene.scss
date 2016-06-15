@@ -1,0 +1,21 @@
+.modules-scene{
+  .music{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 10;
+    .fa{
+      border: 1px solid #fff;
+      border-radius: 100%;
+      width: 25px;
+      height: 25px;
+      text-align: center;
+      line-height: 25px;
+      color: $white;
+    }
+  }
+  img{
+    width: 320px;
+    height: 505px;
+  }
+}

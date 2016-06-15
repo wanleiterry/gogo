@@ -1,0 +1,12 @@
+.label.label-init {
+  color: $color;
+  font-weight: 300;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  >a {
+    color: $color;
+    >i {
+      font-weight: 300;
+    }
+  }
+}

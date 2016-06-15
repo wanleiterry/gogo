@@ -1,0 +1,1 @@
+define(['ui.router', 'jquery'], function() { });

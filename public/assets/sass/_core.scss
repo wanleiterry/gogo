@@ -1,0 +1,213 @@
+body {
+  min-width: $body-width;
+  font-size: $font-size;
+  line-height: 1.5em;
+  font-family: "Helvetica Neue",STHeiti,"Microsoft YaHei",Verdana,Arial,Tahoma,sans-serif;
+  //font-family: "Helvetica Neue",Helvetica,"Microsoft Yahei",Verdana,Arial,Tahoma,sans-serif;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a,
+a:focus,
+a:focus,
+a:hover {
+  color: $link-color;
+  text-decoration: none;
+  outline: 0;
+  cursor: pointer;
+}
+
+label {
+  font-weight: normal;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+.mb5 {
+  margin-bottom: 5px!important;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb15 {
+  margin-bottom: 15px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mt0 {
+  margin-top: 0;
+}
+.mt5 {
+  margin-top: 5px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mt15 {
+  margin-top: 15px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+
+.ml5 {
+  margin-left: 5px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.ml15 {
+  margin-left: 15px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+
+.mr5 {
+  margin-right: 5px!important;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mr15 {
+  margin-right: 15px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+
+.clr-red {
+  color: #ff3300;
+}
+.clr-orange {
+  color: #f37800;
+}
+.clr-green {
+  color: #53a000;
+}
+.clr-gray {
+  color: #a3a3a3;
+}
+.clr-blue{
+  color: #07d;
+}
+.clr-payout,
+.clr-payout:hover{
+  color: #f60;
+  //font-weight: bold;
+}
+.clr-payin,
+.clr-payin:hover{
+  color: #53a000;
+  //font-weight: bold;
+}
+
+span.delimiter {
+  color: #f5f5f5;
+  padding: 0 2px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+}
+
+.size34 {
+  width: 34px;
+  height: 34px;
+}
+
+.viewer {
+  min-width: 1200px;
+}
+
+.wrapper {
+  padding: 50px 0 0 0;
+}
+
+.sidebar+.wrapper {
+  margin-left: 60px;
+}
+
+.container {
+  width: auto;
+  padding: 20px 20px 10px;
+  &.container-small {
+    width: 1000px;
+  }
+}
+
+.inner-menu+.container {
+  margin-left: 180px;
+}
+
+/*应用介绍banner*/
+.tset-area {
+  padding: 15px;
+  background: #f9f9f9;
+  border: 1px solid #ECECEC;
+  >h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    a {
+      margin-left: 10px;
+      font-size: 12px;
+      font-weight: normal;
+    }
+  }
+  >p {
+    margin: 0;
+  }
+  >.opr {
+    float: right;
+    margin-top: 5px;
+    >.btn {
+      min-width: 80px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.page-title {
+  font-size: 14px;
+}
+
+.no-padding {
+  padding: 0!important;
+}
+
+.no-margin {
+  margin: 0!important;
+}
+
+.popover {
+  font-size: 12px;
+}
+
+.validator-form {
+  position: relative;
+}
+
+.has-error {
+  .ui-select-match {
+    border-color: #a94442!important;
+  }
+  .city-select {
+    button {
+      border-color: #a94442!important;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+$renrenEc-btn: #ff9900;
+.free-open{
+    text-align: center;
+    button{
+        border-color: $renrenEc-btn;
+        background-color: $renrenEc-btn;
+        color: #fff !important;
+        &:visited{
+            border-color: $renrenEc-btn;
+            background-color: $renrenEc-btn;
+            color: #fff;
+        }
+        &:hover{
+            border-color: $renrenEc-btn;
+            background-color: $renrenEc-btn;
+            color: #fff;
+        }
+        &:active{
+            border-color: $renrenEc-btn;
+            background-color: $renrenEc-btn;
+            color: #fff;
+        }
+    }
+}
+
+.rrdshang-Modal{
+    .modal-dialog{
+        width: 836px;
+        margin-top: 2% !important;
+    }
+}

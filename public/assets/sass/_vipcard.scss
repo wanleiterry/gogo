@@ -1,0 +1,37 @@
+.vipcard-table{
+  tbody>tr>td{
+    vertical-align: middle;
+  }
+}
+.card-notes{
+  width: 70px;
+  position: relative;
+  .card-notes-no{
+    color:#c9c9c9;
+    text-align: center;
+  }
+  .card-help-notes{
+    color: #07d;
+    text-align: center;
+  }
+  &:hover .card-notes-cont{
+    display: block;
+  }
+  .card-notes-cont{
+    display: none;
+    width: 200px;
+    background-color: #fff;
+    border:1px solid #eee;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    margin-left: -70px;
+    p{
+      height: 20px;
+      line-height: 20px;
+      margin:0px;
+    }
+  }
+}

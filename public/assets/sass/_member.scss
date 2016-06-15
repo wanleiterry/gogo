@@ -1,0 +1,36 @@
+.member-main{
+  width: 100%;
+  display:-moz-box;
+  display:-webkit-box;
+  display:box;
+  li{
+    -moz-box-flex:1.0;
+    -webkit-box-flex:1.0;
+    box-flex:1.0;
+    p{
+      text-align: center;
+      margin:0;
+      height: 30px;
+      line-height: 30px;
+      i{
+        color: #cc3333;
+      }
+    }
+    p:first-child i{
+      font-size: 18px;color: #3c3;vertical-align: middle;
+    }
+    div.main{
+      width: 80px;
+      height: 80px;
+      text-align: center;
+      line-height: 80px;
+      border-radius: 40px;
+      border:1px solid #eee;
+      margin:0px auto;
+      font-size: 18px;
+      color: #cc3333;
+    }
+  }
+
+
+}

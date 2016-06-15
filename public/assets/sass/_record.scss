@@ -1,0 +1,29 @@
+table.table-record{
+  border:1px solid #eee;
+  >thead>tr>th{
+    border:0;
+    text-align: center;
+  }
+  >tbody+tbody{
+    border-top:none;
+  }
+  >tbody:nth-child(odd) {
+    background: #fcfcfc;
+  }
+  >tbody>tr>td{
+    vertical-align: middle;
+    border-right: 1px solid #eee;
+    border-top:1px solid #eee;
+    border-bottom: none;
+    border-left: none;
+    span.money-plus{
+      color: #55BD47;
+    }
+    span.money-minus{
+      color: #999;
+    }
+  }
+  >tbody>tr>td.coltext{
+    text-align: center;
+  }
+}

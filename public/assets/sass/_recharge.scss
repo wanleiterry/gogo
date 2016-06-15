@@ -1,0 +1,52 @@
+.recharge-modal{
+  .recharge-modal-title{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .recharge-modal-code{
+    width: 280px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 10px;
+    background-color: #f5f5f5;
+    p{
+      line-height: 40px;
+      font-size: 16px;
+      margin:0px;
+      span{
+        color: #FF6600;
+      }
+      img{
+        display: block;
+        width: 180px;
+        height: 180px;
+      }
+    }
+  }
+  .recharge-modal-button{
+    text-align: center;
+    padding: 10px 0px;
+  }
+  .recharge-modal-success-t{
+    font-size: 20px;
+    color: #22C415;
+    text-align: center;
+    margin-top:30px;
+  }
+  .recharge-modal-success-c{
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    margin: 20px 0 0 0;
+    span{
+      color: #FF6600;
+    }
+  }
+  .recharge-modal-success-b{
+    padding: 19px 20px 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,1 @@
+define(['ckeditor', 'baiduMap', 'wxLogin','templates'], function() { });

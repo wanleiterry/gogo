@@ -1,0 +1,85 @@
+.snatch-region {
+  border: 1px solid #f2f2f2;
+  margin-bottom: 15px;
+  .snatch-system {
+    float: left;
+    width: 50%;
+    border-right: 1px solid #f2f2f2;
+    padding: 10px;
+    .snatch-status {
+      .status-title {
+        font-size: 14px;
+        margin: 0 0 8px 0;
+        &.success {//成功
+          color: #4cae4c;
+        }
+        &.orderclose{//关闭
+          color: #333;
+          i{
+            color: #ED5050;
+          }
+        }
+      }
+      .status-intro {
+        color: #666;
+        padding-left: 16px;
+      }
+    }
+    .snatch-info {
+      h3 {
+        font-size: 14px;
+        margin: 0 0 10px 0;
+      }
+      table {
+        margin-left: 16px;
+        th {
+          text-align: right;
+          font-weight: normal;
+          color: #666;
+        }
+        th,
+        td {
+          padding-bottom: 8px;
+        }
+      }
+    }
+  }
+  .snatch-member {
+    padding-left: 50%;
+    .member-border {
+      border-left: 1px solid #f2f2f2;
+      margin-left: -1px;
+      padding: 10px;
+    }
+    .snatch-delivery {
+      h3 {
+        font-size: 14px;
+        margin: 0 0 10px 0;
+      }
+      table {
+        margin-left: 22px;
+        th {
+          text-align: right;
+          font-weight: normal;
+          color: #666;
+        }
+        th,
+        td {
+          padding-bottom: 8px;
+        }
+      }
+    }
+  }
+
+  .snatch-action {
+    padding: 20px 0 0 16px;
+  }
+
+}
+.snatch-form{
+  .goods-name{
+    >p{
+      margin:0;
+    }
+  }
+}
