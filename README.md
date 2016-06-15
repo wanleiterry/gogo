@@ -1,1 +1,1 @@
-This project is used to practice frame structure!!
+This project is used to practice laravel + Angular structure!!
