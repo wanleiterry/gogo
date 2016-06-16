@@ -18,7 +18,7 @@
 
 
 </head>
-<body ng-controller="rootController">
+<body ng-controller="bodyController">
 
 <div top-bar></div>
 

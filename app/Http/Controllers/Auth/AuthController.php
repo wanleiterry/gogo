@@ -62,4 +62,16 @@ class AuthController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
+
+    public function getLogin()
+    {
+        $global = [];
+        $global['url'] = [
+            'base' => url(),
+            'https' => url('', '', true),
+            'static' => env('STATIC_DOMAIN')
+        ];
+        $data['global'] = json_encode($global);
+        return view('home', $data);
+    }
 }
