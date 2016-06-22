@@ -15,4 +15,6 @@ Route::get('/', 'HomeController@index');
 
 Route::group(['prefix' => 'auth'], function () {
     Route::get('login', 'Auth\AuthController@getLogin');
+    Route::post('login.json', 'Auth\AuthController@postLogin');
+    Route::get('logout.json', 'Auth\AuthController@getLogout');
 });
