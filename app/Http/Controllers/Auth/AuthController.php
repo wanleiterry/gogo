@@ -55,10 +55,10 @@ class AuthController extends Controller
     {
         $params = $request->all();
 
-        $name     = isset($params['name']) ? $params['name'] : '';
+        $username = isset($params['username']) ? $params['username'] : '';
         $password = isset($params['password']) ? $params['password'] : '';
         $credentials = [
-            'name'     => $name,
+            'username' => $username,
             'password' => $password
         ];
 

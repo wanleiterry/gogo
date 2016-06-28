@@ -18,3 +18,7 @@ Route::group(['prefix' => 'auth'], function () {
     Route::post('login.json', 'Auth\AuthController@postLogin');
     Route::get('logout.json', 'Auth\AuthController@getLogout');
 });
+
+Route::group(['prefix' => 'goods'], function () {
+    Route::get('list.json', 'Goods\GoodsController@getGoodsList');
+});

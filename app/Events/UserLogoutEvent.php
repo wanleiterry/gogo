@@ -15,7 +15,7 @@ class UserLogoutEvent extends Event
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($user)
     {
         $this->type = 'onUserLogout';
         $this->user = $user;
