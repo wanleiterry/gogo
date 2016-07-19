@@ -1,133 +1,133 @@
-#layout{
+.layout{
 	float: left;
 	width: 179px;
-	#menu {
+	.menu {
 	 	margin-right: -1px;
 	 	font-size: 13px;
 	 	font-weight: bold;
 	}
-	#menu ul {
+	.menu ul {
 	 	border-top: 1px solid #F9F9F9;
 	 	border-bottom: 1px solid #CCCCCC;
 	 	padding: 4px 0;
 	}
-	#menu .top {
+	.menu .top {
 	 	border-top: 0;
 	 	border-right: 1px solid #CCC;
 	 	background-color: #F5F5F5;
 	}
-	#menu .bot {
+	.menu .bot {
 	 	border-bottom: 0;
 	}
-	#menu li {
+	.menu li {
 	 	height: 38px;
 	 	overflow: hidden;
 	}
-	#menu li.cur {
+	.menu li.cur {
 	 	background: #60BBFF url(image/menu_cur.gif) no-repeat right 50%;
 	}
-	#menu li.cur a {
+	.menu li.cur a {
 	 	color: #FFF;
 	}
-	#menu li a {
+	.menu li a {
 	 	display: block;
 	 	height: 38px;
 	 	line-height: 38px;
 	}
-	#menu li i {
+	.menu li i {
 	 	background: url(image/icon_menu.png) no-repeat 13px 0;
 	 	float: left;
 	 	display: block;
 	 	width: 42px;
 	 	height: 38px;
 	}
-	#menu li em {
+	.menu li em {
 	 	float: left;
 	 	display: block;
 	 	width: 130px;
 	 	height: 38px;
 	 	cursor: pointer;
 	}	
-	#menu .top li {
+	.menu .top li {
 	 	height: 27px;
 	}
-	#menu .top li a {
+	.menu .top li a {
 	 	height: 27px;
 	 	line-height: 27px;
 	}
-	#menu .top li i {
+	.menu .top li i {
 	 	height: 27px;
 	}
-	#menu .top li i.home {
+	.menu .top li i.home {
 	 	background-position: 13px -40px;
 	}
-	#menu li i.system {
+	.menu li i.system {
 	 	background-position: 13px -79px;
 	}
-	#menu li i.nav {
+	.menu li i.nav {
 	 	background-position: 13px -119px;
 	}
-	#menu li i.show {
+	.menu li i.show {
 	 	background-position: 13px -159px;
 	}
-	#menu li i.page {
+	.menu li i.page {
 	 	background-position: 13px -199px;
 	}
-	#menu li i.productCat {
+	.menu li i.productCat {
 	 	background-position: 13px -239px;
 	}
-	#menu li i.product {
+	.menu li i.product {
 	 	background-position: 13px -279px;
 	}
-	#menu li i.articleCat {
+	.menu li i.articleCat {
 	 	background-position: 13px -319px;
 	}
-	#menu li i.article {
+	.menu li i.article {
 	 	background-position: 13px -359px;
 	}
-	#menu li i.manager {
+	.menu li i.manager {
 	 	background-position: 13px -399px;
 	}
-	#menu li i.managerLog {
+	.menu li i.managerLog {
 	 	background-position: 13px -439px;
 	}
-	#menu li i.backup {
+	.menu li i.backup {
 	 	background-position: 13px -479px;
 	}
-	#menu li i.link {
+	.menu li i.link {
 	 	background-position: 13px -519px;
 	}
-	#menu li i.guestbook {
+	.menu li i.guestbook {
 	 	background-position: 13px -559px;
 	}
-	#menu li i.mobile {
+	.menu li i.mobile {
 	 	background-position: 13px -599px;
 	}
-	#menu li i.user {
+	.menu li i.user {
 	 	background-position: 13px -639px;
 	}
-	#menu li i.order {
+	.menu li i.order {
 	 	background-position: 13px -679px;
 	}
-	#menu li i.plugin {
+	.menu li i.plugin {
 	 	background-position: 13px -719px;
 	}
-	#menu li i.menuPage {
+	.menu li i.menuPage {
 	 	background-position: 13px -759px;
 	}
-	#menu li i.theme {
+	.menu li i.theme {
 	 	background-position: 13px -799px;
 	}
-	#menu li i.caseCat {
+	.menu li i.caseCat {
 	 	background-position: 13px -839px;
 	}
-	#menu li i.case {
+	.menu li i.case {
 	 	background-position: 13px -879px;
 	}
-	#menu li i.downloadCat {
+	.menu li i.downloadCat {
 	 	background-position: 13px -919px;
 	}
-	#menu li i.download {
+	.menu li i.download {
 	 	background-position: 13px -959px;
 	}
 }

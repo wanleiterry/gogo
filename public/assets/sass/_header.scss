@@ -1,81 +1,81 @@
-#header{
+.top_header{
 	background-color: #0072C6;
 	float: left;
 	height: 40px;
 	width: 100%;
-	#head .logo {
+	.logo {
 	 	border-right: 1px solid #0065B0;
 	 	float: left;
 	 	width: 179px;
 	 	height: 40px;
 	}
-	#head .logo img {
+	.logo img {
 	 	margin: 7px 0 0 13px;
 	}
-	#head .nav {
+	.navs {
 	 	margin-left: 180px;
 	 	height: 40px;
 	 	line-height: 40px;
 	 	color: #D9D9D9;
 	 	font-size: 13px;
 	}
-	#head .nav ul {
+	.navs ul {
 	 	float: left;
 	}
-	#head .nav ul.navRight {
+	.navs ul.navRight {
 	 	float: right;
 	}
-	#head .nav li {
+	.navs li {
 	 	float: left;
 	 	border-left: 1px solid #0080DD;
 	 	border-right: 1px solid #0065B0;
 	}
-	#head .nav a {
+	.navs a {
 	 	display: block;
 	 	color: #D9D9D9;
 	 	padding: 0 15px;
 	}
-	#head .nav a.topAdd {
+	.navs a.topAdd {
 	 	background: url(image/top_add.gif) no-repeat 15px top;
 	 	padding-left: 35px;
 	}
-	#head .nav a:hover, #head .nav a.cur {
+	.navs a:hover, .navs a.cur {
 	 	background-color: #60BBFF;
 	 	color: #FFF;
 	}
-	#head .nav a.topAdd:hover {
+	.navs a.topAdd:hover {
 	 	background: #60BBFF url(image/top_add.gif) no-repeat 15px bottom;
 	}
-	#head .nav .noLeft {
+	.navs .noLeft {
 	 	border-left: 0;
 	}
-	#head .nav .noRight {
+	.navs .noRight {
 	 	border-right: 0;
 	}
 	/*- 下拉菜单 -*/
-	#head .nav .M {
+	.navs .M {
 	 	position: relative;
 	}
-	#head .nav .active a {
+	.navs .active a {
 	 	background-color: #FFF;
 	 	color: #000;
 	}
-	#head .nav .active a.topAdd {
+	.navs .active a.topAdd {
 	 	background: #FFF url(image/top_add.gif) no-repeat 15px top;
 	}
-	#head .nav .drop {
+	.navs .drop {
 	 	display: none;
 	 	position: absolute;
 	}
-	#head .nav .drop a {
+	.navs .drop a {
 	 	line-height: 30px;
 	 	font-size: 12px;
 	}
-	#head .nav .active .drop {
+	.navs .active .drop {
 	 	display: block;
 	}
 	/* mTopad */
-	#head .nav .mTopad {
+	.navs .mTopad {
 	 	left: -1px;
 	 	top: 40px;
 	 	width: 120px;
@@ -83,7 +83,7 @@
 	 	border-right: 1px solid #CCC;
 	 	border-bottom: 1px solid #CCC;
 	}
-	#head .nav .mTopad a {
+	.navs .mTopad a {
 	 	border-bottom: 1px solid #EEE;
 	 	border-left: 1px solid #EEE;
 	 	border-right: 1px solid #EEE;
@@ -91,24 +91,24 @@
 	 	color: #333;
 	 	padding-left: 20px;
 	}
-	#head .nav .mTopad a:hover {
+	.navs .mTopad a:hover {
 	 	background-color: #F9F9F9;
 	 	color: #0072C6;
 	}
 	/* mUser */
-	#head .nav .mUser {
+	.navs .mUser {
 	 	left: -1px;
 	 	top: 40px;
 	 	width: 134px;
 	 	border-left: 1px solid #EEE;
 	 	border-right: 1px solid #EEE;
 	}
-	#head .nav .mUser a {
+	.navs .mUser a {
 	 	border-bottom: 1px solid #EEE;
 	 	background-color: #FFF;
 	 	color: #0072C6;
 	}
-	#head .nav .mUser a:hover {
+	.navs .mUser a:hover {
 	 	background-color: #F9F9F9;
 	 	color: #0072C6;
 	}
