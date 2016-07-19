@@ -8,6 +8,10 @@ define(['apps/common/states/states'], function (states) {
             url: '',
             templateUrl: 'assets/js/apps/app/templates/dashboard.html',
             controller:'app.dashboard'
+        }).state('app.system', {
+            url: '/system',
+            templateUrl: 'assets/js/apps/app/templates/system.html',
+            controller:'app.system'
         })
     }]);
 });

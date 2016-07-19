@@ -1,0 +1,49 @@
+.index_box{
+	#index .indexBox {
+		margin-bottom: 20px;
+	}
+	#index .indexBox .boxTitle {
+		border-bottom: 1px solid #D7D7D7;
+		color: #666666;
+		font-size: 16px;
+		padding-bottom: 10px;
+		margin-bottom: 15px;
+	}
+	#index .indexBox em {
+		color:#999;
+	}
+	/*- ipage -*/
+	#index .indexBox .ipage {
+		overflow: hidden;
+	}
+	#index .indexBox .ipage a {
+		display: block;
+		background-color: #DDDDDD;
+		color: #555555;
+		font-weight: bold;
+		border: 1px dotted #CCCCCC;
+		float: left;
+		width: 122px;
+		height: 37px;
+		line-height: 37px;
+		text-align: center;
+		margin: 0 15px 12px 0;
+	}
+	#index .indexBox .ipage a.child1 {
+		border: 1px dotted #DDDDDD;
+		background-color: #EEEEEE;
+	}
+	#index .indexBox .ipage a.child2 {
+		border: 1px dotted #EEEEEE;
+		background-color: #F6F6F6;
+	}
+	#index .indexBox .ipage a.child3 {
+		border: 1px dotted #F6F6F6;
+		background-color: #FFFFFF;
+	}
+	#index .indexBox .ipage a:hover {
+		border: 1px dotted #FFFFFF;
+		background: #60BBFF url(../images/icon_edit_white.png) no-repeat 12px 50%;
+		color: #FFF;
+	}
+}
