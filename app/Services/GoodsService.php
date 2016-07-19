@@ -23,4 +23,9 @@ class GoodsService
         $data['data']   = Goods::skip($offset)->take($limit)->get();
         return $data;
     }
+
+    public function getGoods($goods_id)
+    {
+
+    }
 }

@@ -22,3 +22,5 @@ Route::group(['prefix' => 'auth'], function () {
 Route::group(['prefix' => 'goods'], function () {
     Route::get('list.json', 'Goods\GoodsController@getGoodsList');
 });
+
+Route::any('{all}', 'HomeController@index')->where('all', '.*');

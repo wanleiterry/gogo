@@ -5,7 +5,7 @@ define([
     'angular',
     'app',
     'apps/common/directives/_base',
-    'apps/common/states/states'
+    'apps/app/main'
 ], function (angular) {
     angular.element(document).ready(function(){
         angular.bootstrap(document, ['body']);
