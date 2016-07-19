@@ -145,7 +145,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        'Latrell\Alipay\AlipayServiceProvider',
+        /*'Latrell\Alipay\AlipayServiceProvider',*/
 
     ],
 
