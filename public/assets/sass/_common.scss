@@ -1,0 +1,266 @@
+.main_box{	
+	/*主体共用部分*/
+	#urHere {
+		background-color:#F5F5F5;
+		border-left: 1px solid #FFF;
+		height: 35px;
+		line-height: 37px;
+		color: #A0A0A0;
+		padding-left: 20px;
+	}
+	#urHere a {
+	 	color: #A0A0A0;
+	}
+	#urHere b {
+	 	margin: 0 13px;
+	}
+	/* 公共主区域
+	----------------------------------------------- */
+	.mainBox {
+		border-left: 1px solid #FFF;
+		padding: 30px 22px 50px 22px;
+	}
+	.mainBox h3 {
+		border-bottom: 1px solid #D7D7D7;
+		color: #666666;
+		font-size: 28px;
+		padding-bottom: 20px;
+		margin-bottom: 30px;
+	}
+	.mainBox h3 .actionBtn {
+		float: right;
+		display: inline-block;
+		background-color: #28B779;
+		padding: 0 20px;
+		height: 27px;
+		line-height: 27px;
+		color: #FFFFFF;
+		font-size: 13px;
+		font-weight: bold;
+	}
+	.mainBox h3 .add {
+		background: #28B779 url(../images/action_btn.gif) no-repeat 20px 50%;
+		padding-left: 40px;
+	}
+	.mainBox .filter {
+		margin: 0 0 10px -2px;
+		height: 35px;
+	}
+	.mainBox .filter form {
+		float: left;
+	}
+	.mainBox .filter span {
+		float: right;
+	}
+	.mainBox .action {
+		margin: 10px 0 0 -2px;
+	}
+	.mainBox .warning {
+		border: 1px solid #E6DB55;
+		background: #FFFBCC;
+		padding: 10px;
+		margin-bottom: 20px;
+	}
+	/*- tab -*/
+	.tab {
+		border-bottom: 1px solid #60BBFF;
+		font-weight: bold;
+		font-size: 14px;
+		height: 35px;
+		overflow: hidden;
+	}
+	.tab li {
+		float: left;
+		line-height: 35px;
+		height: 35px;
+	}
+	.tab a {
+		display: block;
+		background-color: #F9F9F9;
+		padding: 0 44px;
+		text-decoration: none;
+		color: #999;
+	}
+	.tab a.selected {
+		background-color: #60BBFF;
+		color: #FFF;
+	}
+	/*- tableBasic -*/
+	.tableBasic {
+		background-color: #F9F9F9;
+		color: #666666;
+		border-left: 1px dotted #CCCCCC;
+		border-top: 1px dotted #CCCCCC;
+	}
+	.tableBasic select {
+		color: #8F8F8F;
+	}
+	.tableBasic td, .tableBasic th {
+		border-right: 1px dotted #CCCCCC;
+		border-bottom: 1px dotted #CCCCCC;
+		padding: 10px;
+	}
+	.tableBasic th {
+		background-color: #EEEEEE;
+		height: 16px;
+	}
+	.tableBasic .child {
+	 	background-color: #FFFFFF;
+	}
+	/*- tableNobor -*/
+	.tableNobor td {
+	 	border: 0;
+	}
+	/*- tableOnebor -*/
+	.tableOnebor td {
+	 	border-right: 0;
+	}
+	/*- showHidden -*/
+	.showHidden {
+	 	display: block;
+	 	float: right;
+	 	font-size: 12px;
+		background-color: #CCC;
+	}
+	.showHidden b, .showHidden s {
+		display: block;
+		float: left;
+		padding: 4px 15px;
+		background-color: #CCC;
+		color: #333;
+		cursor: pointer;
+	}
+	.showHidden .d b {
+		background-color: #0072C6;
+		color: #FFF;
+	}
+	.showHidden .h s {
+		background-color: #0072C6;
+		color: #FFF;
+	}
+	/*- unum -*/
+	.unum {
+		display: inline-block;
+		background-color:#28B779;
+		color: #fff;
+		font-size: 9px;
+		line-height: 17px;
+		font-weight: 600;
+		margin: 1px 0 0 2px;
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+	}
+	.unum span {
+		display: block;
+		padding: 0 6px;
+	}
+	/* 当前位置
+	----------------------------------------------- */
+	#urHere {
+		background-color:#F5F5F5;
+		border-left: 1px solid #FFF;
+		height: 35px;
+		line-height: 37px;
+		color: #A0A0A0;
+		padding-left: 20px;
+	}
+	#urHere a {
+		color: #A0A0A0;
+	}
+	#urHere b {
+		margin: 0 13px;
+	}
+	/* 主体框架
+	----------------------------------------------- */
+	#dcMain {
+		background-color: #FFFFFF;
+		border-left: 1px solid #CCC;
+		margin-left: 179px;
+		padding-top: 40px;
+		*padding-top:0;
+		zoom: 1/* padding-top:40px; */
+	}
+	#dcFooter {
+		height: 45px;
+		background-color: #EEEEEE;
+	}
+	/*- form -*/
+	.btn {
+		display: inline-block;
+		background-color: #0072C6;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		border: 0;
+		color: #FFF;
+		padding: 6px 15px;
+		font-weight: bold;
+		text-transform: capitalize;
+		cursor: pointer;
+		-webkit-appearance: none;
+	}
+	.btnGray {
+		display: inline-block;
+		background-color: #EEE;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		border: 0;
+		color: #666;
+		padding: 6px 15px;
+		font-weight: bold;
+		text-transform: capitalize;
+		cursor: pointer;
+		-webkit-appearance: none;
+	}
+	.btnPayment {
+		display: inline-block;
+		background-color: #ff4246;
+		color: #FFF;
+		padding: 7px 28px;
+		text-transform: capitalize;
+		cursor: pointer;
+		font-weight: bold;
+		font-size:14px;
+		text-align:center;
+		-webkit-appearance: none;
+	}
+	.inpMain {
+		border: 1px solid #DBDBDB;
+		background-color: #FFF;
+		padding: 4px 5px;
+		color: #999;
+		font-size: 12x;
+		line-height: 20px;
+		-webkit-appearance: none;
+	}
+	.inpFlie {
+		border: 1px solid #DBDBDB;
+		background-color: #FFF;
+		padding: 5px 5px;
+		color: #999;
+		-webkit-appearance: none;
+	}
+	.textArea {
+		border: 1px solid #DBDBDB;
+		background-color: #FFF;
+		padding: 4px 5px;
+		color: #999;
+		font-size: 12x;
+		line-height: 20px;
+		-webkit-appearance: none;
+	}
+	.textAreaAuto {
+		border: 1px solid #DBDBDB;
+		background-color: #FFF;
+		padding: 0;
+		color: #999;
+		font-size: 12x;
+		line-height: 20px;
+		resize: none;
+		min-height: 40px;
+		-webkit-appearance: none;
+	}
+	select {
+		border: 1px solid #DBDBDB;
+		padding: 5px 5px 5px 2px;
+	}
+}
