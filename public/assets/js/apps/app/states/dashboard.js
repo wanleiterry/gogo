@@ -3,7 +3,7 @@ define(['apps/common/states/states'], function (states) {
         $stateProvider.state('app', {
             abstract: true,
             url: '/app',
-            templateUrl: 'assets/js/apps/team/templates/layout.html'
+            templateUrl: 'assets/js/apps/app/templates/layout.html'
         }).state('app.dashboard', {
             url: '',
             templateUrl: 'assets/js/apps/app/templates/dashboard.html',
