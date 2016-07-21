@@ -1,5 +1,5 @@
 define(['apps/common/controllers/controllers'], function (controllers) {
-    controllers.controller('app.dashboard', ['$scope','Flash', '$timeout', '$state', '$stateParams', function ($scope, Flash, $timeout, $state, $stateParams) {
-        alert('dashboard');
+    controllers.controller('app.dashboard', ['$scope' ,function ($scope) {
+        //console.log('dashboard');
     }]);
 });
