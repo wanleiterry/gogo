@@ -5,5 +5,7 @@ define([
     'apps/app/states/show',
     'apps/app/states/page',
     'apps/app/states/product_category',
-    'apps/app/states/product'
+    'apps/app/states/product',
+    'apps/app/states/article_category',
+    'apps/app/states/article'
 ], function () {});
