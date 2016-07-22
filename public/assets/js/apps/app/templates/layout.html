@@ -1,21 +1,21 @@
 <div class="layout">
 	<div class="menu">
 		<ul class="top">
-			<li>
+			<li ng-class="{cur: $state.includes('app.dashboard')}">
 				<a href="app"><i class="home"></i><em>管理首页</em></a>
 			</li>
 		</ul>
 		<ul>
-			<li>
+			<li ng-class="{cur: $state.includes('app.system')}">
 				<a href="app/system"><i class="system"></i><em>系统设置</em></a>
 			</li>
-			<li>
+			<li ng-class="{cur: $state.includes('app.nav')}">
 				<a href="app/nav"><i class="nav"></i><em>自定义导航栏</em></a>
 			</li>
-			<li>
+			<li ng-class="{cur: $state.includes('app.show')}">
 				<a href="app/show"><i class="show"></i><em>首页幻灯广告</em></a>
 			</li>
-			<li>
+			<li ng-class="{cur: $state.includes('app.system')}">
 				<a href="app/page"><i class="page"></i><em>单页面管理</em></a>
 			</li>
 		</ul>

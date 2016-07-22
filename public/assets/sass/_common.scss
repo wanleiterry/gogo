@@ -263,4 +263,39 @@
 		border: 1px solid #DBDBDB;
 		padding: 5px 5px 5px 2px;
 	}
+	.page dl {
+		border: 1px dotted #CCC;
+		background-color: #DDDDDD;
+		float: left;
+		width: 120px;
+		height: 90px;
+		margin: 0 15px 15px 0;
+		text-align: center;
+	}
+	.page dl.child1 {
+		border: 1px dotted #DDDDDD;
+		background-color: #EEEEEE;
+	}
+	.page dl.child2 {
+		border: 1px dotted #EEEEEE;
+		background-color: #F6F6F6;
+	}
+	.page dl.child3 {
+		border: 1px dotted #F6F6F6;
+		background-color: #FFFFFF;
+	}
+	.page dt {
+		padding: 8px 0;
+		color: #555;
+	}
+	.page dt p {
+		padding-top: 5px;
+		color: #999;
+	}
+	.page dd {
+	 	color: #CCC;
+	}
+	.page dd a {
+	 	color: #999;
+	}
 }
