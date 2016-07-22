@@ -1,0 +1,36 @@
+.mobile_box{
+	#mobileBox {
+		background-color:#F5F5F5;
+		border-top: 1px solid #CCCCCC;
+	}
+	#mobileBox #mMenu {
+		float: left;
+		width: 120px;
+	}
+	#mobileBox #mMain {
+		background-color: #FFFFFF;
+		border-left: 1px solid #DDD;
+		margin-left: 120px;
+	}
+	#mobileBox #mMenu h3 {
+		background:#60BBFF url(/image/icon_mobile.png) no-repeat center 30px;
+		color:#FFF;
+		font-size:14px;
+		font-weight:bold;
+		text-align:center;
+		height:120px;
+		padding-top:80px;
+	}
+	#mobileBox #mMenu li a {
+		display:block;
+		line-height:50px;
+		height:50px;
+		border-bottom: 1px solid #DDD;
+		padding-left:20px;
+		font-weight:bold;
+	}
+	#mobileBox #mMenu li a.cur {
+		background-color:#FFF;
+		margin-right:-1px;
+	}
+}
