@@ -36,7 +36,7 @@
 	 	padding: 0 15px;
 	}
 	.navs a.topAdd {
-	 	background: url(image/top_add.gif) no-repeat 15px top;
+	 	background: url(/image/top_add.gif) no-repeat 15px top;
 	 	padding-left: 35px;
 	}
 	.navs a:hover, .navs a.cur {
@@ -44,7 +44,7 @@
 	 	color: #FFF;
 	}
 	.navs a.topAdd:hover {
-	 	background: #60BBFF url(image/top_add.gif) no-repeat 15px bottom;
+	 	background: #60BBFF url(/image/top_add.gif) no-repeat 15px bottom;
 	}
 	.navs .noLeft {
 	 	border-left: 0;
@@ -61,7 +61,7 @@
 	 	color: #000;
 	}
 	.navs .active a.topAdd {
-	 	background: #FFF url(image/top_add.gif) no-repeat 15px top;
+	 	background: #FFF url(/image/top_add.gif) no-repeat 15px top;
 	}
 	.navs .drop {
 	 	display: none;

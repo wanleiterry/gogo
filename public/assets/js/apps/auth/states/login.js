@@ -5,9 +5,9 @@ define(['apps/common/states/states'], function (states) {
             url: '/auth',
             templateUrl: 'assets/js/apps/auth/templates/layout.html'
         }).state('auth.login', {
-            url: '',
+            url: '/login',
             templateUrl: 'assets/js/apps/auth/templates/login.html',
-            controller:'auth.login'
-        })
+            controller: 'auth.login'
+        });
     }]);
 });
