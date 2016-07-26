@@ -29,4 +29,7 @@ class PasswordController extends Controller
     {
         $this->middleware('guest');
     }
+
+    protected $subject = '测试';
+    protected $redirectTo = '/';
 }

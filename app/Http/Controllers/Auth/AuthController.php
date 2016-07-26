@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\User;
+use App\Models\User;
 use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
@@ -29,6 +29,10 @@ class AuthController extends Controller
 
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
 
+    protected $redirectAfterLogout = 'auth/login';
+
+    protected $redirectTo = '';
+
     /**
      * Create a new authentication controller instance.
      *
@@ -39,17 +43,17 @@ class AuthController extends Controller
         // $this->middleware('guest', ['except' => 'getLogout']);
     }
 
-    public function getLogin()
-    {
-        $global = [];
-        $global['url'] = [
-            'base' => url(),
-            'https' => url('', '', true),
-            'static' => env('STATIC_DOMAIN')
-        ];
-        $data['global'] = json_encode($global);
-        return view('home', $data);
-    }
+    // public function getLogin()
+    // {
+    //     $global = [];
+    //     $global['url'] = [
+    //         'base' => url(),
+    //         'https' => url('', '', true),
+    //         'static' => env('STATIC_DOMAIN')
+    //     ];
+    //     $data['global'] = json_encode($global);
+    //     return view('home', $data);
+    // }
 
     public function postLogin(LoginRequest $request)
     {
@@ -105,11 +109,48 @@ class AuthController extends Controller
             event(new UserLogoutEvent(Auth::user()));
         }
         Auth::logout();
+        Session::flush();
         return Response::json(['status' => true], 200);
     }
 
     private function setLoginAtSession($uid)
     {
         Session::put('login.session'.$uid, time());
+    }
+
+    /**
+     * Get a validator for an incoming registration request.
+     *
+     * @param  array $data
+     * @return \Illuminate\Contracts\Validation\Validator
+     */
+    protected function validator(array $data)
+    {
+        return Validator::make($data, [
+            'username' => 'required|max:255',
+            'realname' => 'required|max:255',
+            'email'    => 'required|email|max:255|unique:user',
+            'mobile'   => 'required|size:11',
+            'is_admin' => 'numeric',
+            'password' => 'required|confirmed|min:6',
+        ]);
+    }
+
+    /**
+     * Create a new user instance after a valid registration.
+     *
+     * @param  array $data
+     * @return User
+     */
+    protected function create(array $data)
+    {
+        return User::create([
+            'username' => $data['username'],
+            'realname' => $data['realname'],
+            'email'    => $data['email'],
+            'mobile'   => $data['mobile'],
+            'is_admin' => isset($data['is_admin']) ? $data['is_admin'] : 0,
+            'password' => bcrypt($data['password']),
+        ]);
     }
 }

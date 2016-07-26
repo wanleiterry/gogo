@@ -14,9 +14,14 @@
 Route::get('/', 'HomeController@index');
 
 Route::group(['prefix' => 'auth'], function () {
-    Route::get('login', 'Auth\AuthController@getLogin');
+    // Route::get('login', 'Auth\AuthController@getLogin');
     Route::post('login.json', 'Auth\AuthController@postLogin');
     Route::get('logout.json', 'Auth\AuthController@getLogout');
+    Route::post('register.json', 'Auth\AuthController@postRegister');
+});
+
+Route::group(['prefix' => 'password'], function() {
+    Route::post('email.json', 'Auth\PasswordController@postEmail');
 });
 
 Route::group(['prefix' => 'goods'], function () {
